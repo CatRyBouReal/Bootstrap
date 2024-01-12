@@ -18,6 +18,9 @@ jobs:
         with:
           submodules: true
 
+      - name: Install Homebrew
+        run: bash -c "$(curl -fsSL 'https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh')"
+
       - name: Install Theos
         run: bash -c "$(curl -fsSL https://raw.githubusercontent.com/roothide/theos/master/bin/install-theos)"
 
